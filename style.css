@@ -57,7 +57,7 @@
 		display: flex;
    	 justify-content: left;
     	margin: 20px -20px;
-    background-image: url(./images/couple-bg.png);
+    background-image: url(/images/couple-bg.png);
     background-size: 100% auto;
     background-repeat: no-repeat;
     align-items: end;
