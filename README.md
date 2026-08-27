@@ -1,1 +1,0 @@
-# mitt-tack-och-forlat-trots-allt.github.io
