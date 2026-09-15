@@ -184,20 +184,24 @@
 
   .circle-badge {
     border: var(--border-width-thin) solid var(--color-accent);
-    border-radius: 50%;
-    min-width: var(--badge-min-width);
-    aspect-ratio: 1;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    border-radius: 20px;
     justify-content: center;
     text-align: center;
-    font-size: var(--font-size-md);
     font-style: italic;
     padding: var(--spacing-xl);
     background-color: var(--color-badge-bg);
     position: relative;
     z-index: 1;
+    width: 100%;
+  }
+  
+  .circle-badge p {
+    font-size: var(--font-size-xs);
+  }
+
+
+  .circle-badge br {
+    display: none;
   }
 
   .heart {
@@ -365,6 +369,32 @@
 
     .logo-img {
       margin: var(--spacing-0);
+    }
+
+    .circle-badge {
+      border: var(--border-width-thin) solid var(--color-accent);
+      border-radius: 50%;
+      min-width: var(--badge-min-width);
+      aspect-ratio: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      font-style: italic;
+      padding: var(--spacing-xl);
+      background-color: var(--color-badge-bg);
+      position: relative;
+      z-index: 1;
+      width: auto;
+    }
+    
+    .circle-badge p {
+      font-size: var(--font-size-md);
+    }
+
+    .circle-badge br {
+      display: inline;
     }
 
     .tagline {
