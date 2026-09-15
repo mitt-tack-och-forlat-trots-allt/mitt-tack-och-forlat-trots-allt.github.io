@@ -16,18 +16,18 @@
     --font-sans: "Montserrat", sans-serif;
 
     /* Font Sizes */
-    --font-size-xs: 0.75rem;
-    --font-size-sm: 0.85rem;
-    --font-size-md: 0.95rem;
-    --font-size-base: 1rem;
-    --font-size-lg: 1.15rem;
-    --font-size-xl: 1.2rem;
-    --font-size-2xl: 1.25rem;
-    --font-size-3xl: 1.5rem;
-    --font-size-4xl: 1.8rem;
-    --font-size-5xl: 2rem;
-    --font-size-6xl: 2.2rem;
-    --font-size-7xl: 2.5rem;
+    --font-size-xs: 1.25rem;
+    --font-size-sm: 1.35rem;
+    --font-size-md: 1.45rem;
+    --font-size-base: 1.5rem;
+    --font-size-lg: 1.65rem;
+    --font-size-xl: 1.7rem;
+    --font-size-2xl: 1.75rem;
+    --font-size-3xl: 2rem;
+    --font-size-4xl: 2.3rem;
+    --font-size-5xl: 2.5rem;
+    --font-size-6xl: 2.7rem;
+    --font-size-7xl: 3rem;
 
     /* Font Weights */
     --font-weight-semibold: 600;
@@ -56,7 +56,7 @@
     --max-width-container: 800px;
     --logo-max-width: 280px;
     --footer-logo-width: 200px;
-    --badge-min-width: 150px;
+    --badge-min-width: 225px;
     --icon-size: 20px;
     --gradient-height: 20%;
     --opacity-subtle: 0.8;
@@ -85,6 +85,7 @@
     padding: var(--spacing-base);
     max-width: var(--max-width-container);
     margin: var(--spacing-0) auto;
+    font-size: var(--font-size-base);
   }
 
   h2 {
@@ -95,7 +96,7 @@
   }
 
   section {
-      margin-bottom: var(--spacing-2xl);
+      margin-bottom: var(--spacing-4xl);
       display: flex;
       flex-direction: column;
       gap: var(--spacing-md);
@@ -312,6 +313,7 @@
 
   .footer-logo-wrapper {
     text-align: center;
+    margin-top: var(--spacing-4xl);
   }
 
   .footer-logo img {
@@ -324,9 +326,9 @@
   }
 
   .nav-bar {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: var(--spacing-base);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     margin-top: var(--spacing-4xl);
   }
 
@@ -382,12 +384,6 @@
 
     .ticket-box {
       flex: 1;
-    }
-
-    .nav-bar {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
     }
 
     .urpremiar {
