@@ -194,7 +194,7 @@
     z-index: 1;
     width: 100%;
   }
-  
+
   .circle-badge p {
     font-size: var(--font-size-xs);
   }
@@ -360,6 +360,11 @@
     fill: currentColor;
   }
 
+  .images img {
+      width: 100%;
+      height: auto;
+  }
+
   @media (min-width: 600px) {
     .poster-header-inner {
       display: flex;
@@ -388,7 +393,7 @@
       z-index: 1;
       width: auto;
     }
-    
+
     .circle-badge p {
       font-size: var(--font-size-md);
     }
@@ -426,5 +431,11 @@
 
     .footer {
       flex-direction: row;
+    }
+
+    .images {
+        display: grid;
+        gap: var(--spacing-md);
+        grid-template-columns: 1fr 1fr;
     }
   }
